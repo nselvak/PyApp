@@ -3,7 +3,9 @@ name: First Workflow
 on:
   push:
     branches:
-      - main
+      - master
+      - dev
+      - 'releases/**'
 
 jobs:
   example-job:
