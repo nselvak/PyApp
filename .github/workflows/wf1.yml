@@ -1,3 +1,17 @@
+name: First Workflow
+
+on:
+  push:
+    branches:
+      - main
+
 jobs:
-  build:
-    runs-on: [self-hosted]
+  example-job:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Echo Hello, World!
+        run: echo "Hello, World!"
