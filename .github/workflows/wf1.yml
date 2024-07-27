@@ -9,7 +9,7 @@ on:
 
 jobs:
   example-job:
-    runs-on: self-hosted
+    runs-on: Windows
 
     steps:
       - name: Checkout repository
