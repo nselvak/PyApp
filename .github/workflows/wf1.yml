@@ -9,7 +9,7 @@ on:
 
 jobs:
   example-job:
-    runs-on: Windows
+    runs-on: Linux
 
     steps:
       - name: Checkout repository
