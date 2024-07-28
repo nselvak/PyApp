@@ -1,4 +1,4 @@
-name: First Workflow
+name: Push workflow
 
 on:
   push:
@@ -8,12 +8,17 @@ on:
       # - 'release/**'
 
 jobs:
-  example-job:
+  checkout:
     runs-on: Linux
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4 
 
-      - name: Echo Hello, World!
-        run: echo "Hello, World!"
+      # suggest step to check if runner has all dependencies required -- self hosted runner
+      # suggest step to install dependencies if missing from above list
+      # suggest step to run python list -- using self hosted runner
+
+# suggest job to add sematic versioning 
+# suggest job to build app
+# suggest job to run tests using unittest cmd used ==> python -m unittest test_cases.py
