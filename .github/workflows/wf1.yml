@@ -5,7 +5,7 @@ on:
     branches:
       - master
       - dev
-      - 'release/**'
+      # - 'release/**'
 
 jobs:
   example-job:
