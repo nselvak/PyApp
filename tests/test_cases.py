@@ -1,6 +1,6 @@
 import unittest
 import json
-from appAPI import app, tasks
+from ..flask.appAPI import app, tasks
 
 class TodoAPITestCase(unittest.TestCase):
     def setUp(self):
